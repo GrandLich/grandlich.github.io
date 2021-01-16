@@ -2,47 +2,46 @@
 <head>
 	<title>MrLich</title>
 	<link href="main.css" rel="stylesheet">
-	<!-- Thanks to gucci for the style -->
-<meta property="og:title" content="MrLich">
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<meta property="og:title" content="MrLich">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
   <script type="text/javascript" language="JavaScript">
-function ctitle() {
-      var title = document.title,
-          animSeq = ["/", "\\", "|"],
-          animIndex = 0,
-          titleIndex = 0;
-      function doInverseSpinZeroPitch() {
-          var loadTitle = title.substring(0, titleIndex);
-          if (titleIndex > title.length) {
-              animIndex = 0;
-              titleIndex = 0
-          }
-          if (animIndex > 2) {
-              titleIndex++;
-              animIndex = 0
-          }
-          document.title = loadTitle + animSeq[animIndex];
-          animIndex++
-      }
-      window.setInterval(doInverseSpinZeroPitch, 250);
-  };
+	function ctitle() {
+		  var title = document.title,
+			  animSeq = ["/", "\\", "|"],
+			  animIndex = 0,
+			  titleIndex = 0;
+		  function doInverseSpinZeroPitch() {
+			  var loadTitle = title.substring(0, titleIndex);
+			  if (titleIndex > title.length) {
+				  animIndex = 0;
+				  titleIndex = 0
+			  }
+			  if (animIndex > 2) {
+				  titleIndex++;
+				  animIndex = 0
+			  }
+			  document.title = loadTitle + animSeq[animIndex];
+			  animIndex++
+		  }
+		  window.setInterval(doInverseSpinZeroPitch, 250);
+	  };
   </script>
   <script src="https://kit.fontawesome.com/2d7741f44c.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="font-awesome.min.css">
 </head>
 <body>
-<audio autoplay loop id="music">
-    <source src="mf2.mp3" type="audio/mpeg">
-</audio>
+<video id="music" controls="" loop="" autoplay="" name="media" preload="auto" hidden>
+	<source src="mf2.mp3" type="audio/mp3">
+</video>
 <video autoplay="1" loop="1"><source src="fon.mp4" type="video/mp4"/></video>  
 	<div class="pageOverlay">
 	<div class="bg-animation">
-<div id='stars'></div>
-<div id='stars2'></div>
-</div>
-<img border="0">
-       <div id="main">
+	<div id='stars'></div>
+	<div id='stars2'></div>
+	</div>
+	<img border="0">
+      <div id="main">
 		<div class="lightbox">
 			<div class="wrapper">
 				<div class="titles animate">
@@ -60,54 +59,14 @@ function ctitle() {
 						<a href="https://github.com/GrandLich" id="Discord">
 							<i class="fab fa-github fa-lg"></i>
 						</a>
-						<a href="https://gitlab.com/GrandLich" id="Discord">
-							<i class="fab fa-gitlab fa-lg"></i>
-						</a>
-						<a href="https://open.spotify.com/user/ibd4039k4qr95lows0dz4mjw4" id="Discord">
-							<i class="fab fa-spotify fa-lg"></i>
-						</a>
 					</div>
-					</a>
-					<hr>
-					<div class="projects"><a href="https://pentacraft.ru" target="_blank">• Pentacraft sr.curator •</a></div>
-					</a>
+				<hr>
+				<div class="projects"><a target="_blank">• Just a Russian Java developer •</a></div>
 				</div>
 			</div>
 		</div>
 	</div>
 </body>
-	<!--<script> 
-	document.onkeydown = function(e) { 
-	if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {//Alt+c, Alt+v will also be disabled sadly. 
-	} 
-	return false; 
-	}; 
-	</script>
-
-	<script> 
-	function click() { 
-	if (event.button==2||event.button==3) { 
-	oncontextmenu='return false'; 
-	} 
-	} 
-	document.onmousedown=click 
-	document.oncontextmenu = new Function("return false;") 
-	</script>
-	
-	<script language="JavaScript">
-		var space = " ";
-		var speed = "200";
-		var pos = 0;
-		var msg = " MrLich //";
-		function Scroll()
-		{
-		document.title = msg.substring(pos, msg.length) + space + msg.substring(0,pos);
-		pos++;
-		if (pos > msg.length) pos = 0;
-		window.setTimeout("Scroll()", speed);
-		}
-		Scroll();
-	</script>-->
 <script>
   var audio = document.getElementById("music");
   audio.volume = 0.04;
